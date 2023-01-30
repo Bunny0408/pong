@@ -57,7 +57,8 @@ pen.color("white")
 pen.penup()
 pen.hideturtle()
 pen.goto(0, 260)
-pen.write("Player A: 0 Player B : 0", align="center", font=("Courier", 20, "normal"))
+pen.write(" 0                       0 ", align="center", font=("Courier", 20, "normal"))
+
 
 # instead of writing those three lines in each fun we can cut it down to one wich is paddle_a.sety(paddle_a.ycor() + 20)
 
@@ -121,7 +122,8 @@ while True:
         ball.dx *= -1
         score_a += 1
         pen.clear()
-        pen.write("Player A: {} Player B : {}".format(score_a, score_b), align="center", font=("Courier", 20, "normal"))
+        pen.write(" {}                      {} ".format(score_a, score_b), align="center", font=("Courier", 20, "normal"))
+
 
     # For left border -x axis
     if ball.xcor() < -390:
@@ -129,7 +131,7 @@ while True:
         ball.dx *= -1
         score_b += 1
         pen.clear()
-        pen.write("Player A: {} Player B : {}".format(score_a, score_b), align="center", font=("Courier", 20, "normal"))
+        pen.write(" {}                      {} ".format(score_a, score_b), align="center", font=("Courier", 20, "normal"))
 
 
     # Border checking for paddle
